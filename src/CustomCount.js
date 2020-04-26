@@ -13,11 +13,18 @@ export default function CustomCount(props) {
     setSub: () => {
       setCount(count - 1);
     },
+    getValue: () => {
+      return count;
+    },
   };
 
   useEffect(() => {
     props.onReady(api);
   }, [api, props]);
+
+  useEffect(() => {
+    props.onChanged(count);
+  }, [count, props]);
 
   return (
     <div>
