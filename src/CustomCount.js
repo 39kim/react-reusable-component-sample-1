@@ -22,7 +22,7 @@ export default function CustomCount(props) {
   return (
     <div>
       <p>You clicked {count} times</p>
-      <button onClick={api.setAdd}> Click me </button>
+      {/* <button onClick={api.setAdd}> Click me </button> */}
     </div>
   );
 }
